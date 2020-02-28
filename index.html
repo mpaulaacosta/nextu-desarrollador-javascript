@@ -7,11 +7,20 @@
       code {
         background-color: #eee;
       }
+      pre code {
+        border: 1px solid;
+        display: block;
+      }
+      h2 {
+        margin-top: 25px;
+        margin-bottom: 0px;
+      }
     </style>
   </head>
 
   <body>
     <h1>Sintaxis</h1>
+
     <h2>Literales</h2>
     <ul>
       <li id='n1'></li>
@@ -29,6 +38,19 @@
         <code>function myFunction() { document.write("Hola"); }</code>
       </li>
     </ul>
+
+    <h2>Variables</h2>
+    <pre><code>
+      var m;
+      x = 10;
+    </code></pre>
+    <ul>
+      <li>Se pueden declarar sin incializar con <code>var</code></li>
+      <li>O se pueden incializar y quedan declaradas incluso sin <code>var</code></li>
+      <li>No pueden empezar por un número</li>
+      <li>Son CASE-SENSITIVE</li>
+    </ul>
+
   </body>
 
   <script type="text/javascript">
