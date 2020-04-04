@@ -260,13 +260,24 @@
       </code></pre></li>
     </ul>
 
+    <h2>Botón con función</h2>
+    <button type="button" name="button" onclick="clickEnBoton()" id="bClicks">0 clicks</button>
+
   </body>
 
   <script type="text/javascript">
+
     // 5.2 tipos de literales
     document.getElementById("n1").innerHTML = 'numéricos como: 2020 23.4 45e3';
     document.getElementById('a1').innerHTML =
       "strings: texto puede ser con comillas dobles o sencillas";
     // 6.1 Objetos y funciones @ 5:39
+
+    qClicks=0;
+    function clickEnBoton() {
+      qClicks++;
+      document.getElementById("bClicks").innerHTML = qClicks;
+    }
+
   </script>
 </html>
