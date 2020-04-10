@@ -250,6 +250,22 @@
     <h2>Manejo de errores</h2>
     <button type="button" name="button" onclick="generarError()">generar error</button>
 
+    <h2>JSON</h2>
+    <ul>
+      <li>Definición de JSON como texto (pares llave:valor con los textos entre comillas dobles, dentro de {} y separados por coma):<pre><code>
+        var jsonText = '{' +
+          '"empresas:[' +
+            '{"nit":6548-4, "nombre":"TCC", "telefono":"2358585"}' +
+            '{"nit":3547-5, "nombre":"Movistar", "telefono":"5488289"}' +
+            '{"nit":6744-2, "nombre":"ETB", "telefono":"1231234"}' +
+          ']"'
+        '}';
+      </code></pre></li>
+      <li>Para convertir un JSON texto a objeto:<pre><code>
+        var jsObj = JSON.parse(jsonText);
+      </code></pre></li>
+    </ul>
+
   </body>
 
   <script type="text/javascript">
