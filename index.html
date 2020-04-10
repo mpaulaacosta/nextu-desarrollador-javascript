@@ -2,27 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Desarrollador Javascript</title>
-    <style media="screen">
-      code {
-        background-color: #eee;
-      }
-      pre code {
-        border: 1px solid;
-        display: block;
-      }
-      pre {
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
-      h2 {
-        margin-top: 25px;
-        margin-bottom: 0px;
-      }
-      ul {
-        margin-top: 0px;
-      }
-    </style>
   </head>
 
   <body>
@@ -263,6 +244,9 @@
     <h2>Botón con función</h2>
     <button type="button" name="button" onclick="clickEnBoton()" id="bClicks">0 clicks</button>
 
+    <h2>Manejo de errores</h2>
+    <button type="button" name="button" onclick="generarError()">generar error</button>
+
   </body>
 
   <script type="text/javascript">
@@ -277,6 +261,19 @@
     function clickEnBoton() {
       qClicks++;
       document.getElementById("bClicks").innerHTML = qClicks;
+    }
+
+    function generarError() {
+      //numero1=0;
+      try {
+        numero = numero1 * 1;
+        throw('error personalizado');
+        alert("no se ejecutan");
+      } catch (e) {
+        alert(e);
+      } finally {
+        // no entiendo para qué
+      }
     }
 
   </script>
