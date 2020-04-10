@@ -10,6 +10,7 @@ function inicializar() {
 function clickEnBoton() {
   qClicks++;
   document.getElementById("bClicks").innerHTML = qClicks;
+  document.getElementById("tClicks").value = document.getElementById("texto1").value;
 }
 
 function generarError() {
