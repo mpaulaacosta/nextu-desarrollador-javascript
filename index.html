@@ -274,7 +274,7 @@
 
     <h2>Eventos</h2>
     <ul>
-      <li>onblur</li>
+      <li>onblur (pierde el foco)</li>
       <li>onchange (sólo elementos html de entrada)</li>
       <li>onclick</li>
       <li>ondblclick</li>
@@ -294,7 +294,50 @@
       <li>onsubmit (sólo para el elemento form)</li>
       <li>onunload (sólo para el elemento body)</li>
       <li>unreset (sólo para el elemento form y se usa con input type reset)</li>
+      <li>oncopy</li>
     </ul>
+
+    <h2>Formularios</h2>
+    <table>
+      <form class="" action="index.html" method="post" id="formulario">
+        <tr>
+          <td><label>Nombres:</label></td>
+          <td><input type="text" name="nombres" value="" id="nombres"></td>
+        </tr>
+        <tr>
+          <td><label>Apellidos:</label></td>
+          <td><input type="text" name="apellidos" value="" id="apellidos"></td>
+        </tr>
+        <tr>
+          <td><label>Identificación:</label></td>
+          <td><input type="text" name="identificacion" value="" id="identificacion"></td>
+        </tr>
+        <tr>
+          <td><label>Sexo:</label></td>
+          <td><select class="" name="sexo" id="sexo">
+            <option value="" name=""></option>
+            <option value="masculino" name="masculino">Masculino</option>
+            <option value="femenino" name="femenino">Femenino</option>
+          </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Email:</label></td>
+          <td><input type="text" name="email" value="" id="email"></td>
+        </tr>
+        <tr>
+          <td><label>Teléfono:</label></td>
+          <td><input type="text" name="telefono" value="" id="telefono"></td>
+        </tr>
+        <tr>
+          <td><label>Dirección:</label></td>
+          <td><input type="text" name="direccion" value="" id="direccion"></td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="enviar" value="Enviar" id="enviar"></td>
+        </tr>
+      </form>
+    </table>
 
   </body>
 
